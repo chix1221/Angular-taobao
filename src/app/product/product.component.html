@@ -1,0 +1,54 @@
+<div class="main1">
+
+  <div class="main-left">
+
+    <div class="main-title">
+      <h1>万能的淘宝<span class="show-title">下面有30个特色市场等你来逛哦！</span></h1>
+    </div>
+
+    <div class="product-box" *ngFor="let list of lists">
+      <div class="inner-info">
+        <div>
+          <span class="line-f40">{{list.title1}}</span>
+          <span class="text-title">{{list.title2}}</span>
+          <span class="share-weitao">
+                            <span class="line-f40">+</span>
+                            <a href="javascript:void(0)">{{list.title3}}</a>
+                        </span>
+        </div>
+        <div class="inner-left">
+          <img class="lazy" data-original="../../assets/img/show1.png">
+          <h1><a href="javascript:void(0)">{{list.title4}}</a></h1>
+          <span>{{list.title5}}</span>
+        </div>
+        <div class="inner-right">
+          <div>
+            <a href="javascript:void(0)">
+              <img src="../../assets/img/shooes.jpg">
+              <p>{{list.title6}}</p>
+            </a>
+            <a href="javascript:void(0)">
+              <img src="../../assets/img/c.gif">
+              <p>{{list.title7}}</p>
+            </a>
+          </div>
+          <table class="tab-inner">
+            <tbody>
+            <tr>
+              <td><a href="javascript:void(0)">{{list.title8}}</a></td>
+              <td><a href="javascript:void(0)">{{list.title9}}</a></td>
+            </tr>
+            <tr>
+              <td><a href="javascript:void(0)">{{list.title10}}</a></td>
+              <td><a href="javascript:void(0)">{{list.title11}}</a></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- 侧边栏商品组件 -->
+  <app-sidebar-product></app-sidebar-product>
+</div>
